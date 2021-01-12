@@ -1,4 +1,4 @@
-///iteration 1
+//iteration 1
 const hacker1 = 'Bob';
 console.log("The driver's name is " + hacker1);
 const hacker2 = 'Sam';
@@ -34,8 +34,15 @@ if (hacker1[0].toUpperCase() < hacker2[0].toUpperCase()) {
 }
 
 //bonus 1
-
-
+let generatedText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas congue lectus, vitae blandit nibh varius vel. Suspendisse commodo a tellus sit amet tincidunt. Nulla elementum elementum viverra. Ut nulla ante, accumsan non libero eget, dictum efficitur odio. Duis viverra ut lectus a malesuada. Suspendisse sollicitudin laoreet ipsum sed vehicula. Donec pellentesque risus dictum ultricies facilisis. Vestibulum ut lorem suscipit, sagittis nisl non, iaculis enim. Curabitur luctus elit ut eros ultrices malesuada. Phasellus id libero ex. Donec commodo semper justo quis scelerisque. Ut condimentum lorem metus, nec tempor massa tempus at. Vivamus porta, leo eget luctus ultricies, nisi elit varius est, ac posuere felis dui porta velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet sem et nunc dictum mollis a sit amet metus. Morbi dapibus neque quis commodo egestas. Integer nec nisl arcu. Nunc convallis tincidunt ante id porttitor. Mauris lacinia vel leo at pretium. Donec placerat cursus leo, ut sagittis turpis mollis vitae. Aenean et sem lorem. Aenean pretium sed risus non sollicitudin. Aenean tristique elementum enim, a faucibus justo posuere a. Nulla a eleifend enim. Ut fringilla dictum porta.'
+let wordCount = 0;
+for (i = 0; i < generatedText.length; i++) {
+  if(generatedText[i] === ' ') {
+    wordCount += 1;
+  }
+}
+wordCount += 1; //add last word
+console.log("Number of words is " + wordCount)
 // bonus 2
 const phrase = "A man, a plan, a canal, Panama!";
 let phraseNoComma = '';
